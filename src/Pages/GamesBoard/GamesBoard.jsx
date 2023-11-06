@@ -2,6 +2,7 @@ import React from 'react';
 import './GamesBoard.css';
 import NavBar from '../NavBar/NavBar';
 import Sidebar from '../SideBar/SideBar';
+import { Link } from 'react-router-dom';
 
 const gamesData = [
   {
@@ -35,7 +36,9 @@ const GamesBoard = () => {
             <p>{game.description}</p>
           </div>
           {game.isActive ? ( 
+            <Link to="/GameDetails">
             <button className="play-button">Play Now</button>
+            </Link>
           ) : (
             <button className="deactivated-button" disabled>
               Deactivated
