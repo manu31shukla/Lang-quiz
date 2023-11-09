@@ -5,7 +5,7 @@ import Sidebar from '../SideBar/SideBar';
 import { Link } from 'react-router-dom';
 
 const gamesData = [
-  {
+  { 
     id: 1,
     name: 'Word Wise',
     imageUrl: 'https://wallpaperaccess.com/full/1260521.jpg',

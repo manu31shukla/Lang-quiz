@@ -1,11 +1,23 @@
+.form-container {
+    background-color: #fff;
+    width: 130vh;
+    height: 60vh;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    animation: slideIn 1s ease;
+  }
+
 .image-container {
     flex: 1;
     padding: 20px;
-    background: url('../../Assests/gameImage.png');
+    background: url('../../Assets/gameImage.png');
     background-size: contain;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     animation: rotateImage 10s linear infinite;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
 .login-container {
@@ -13,60 +25,40 @@
     padding: 20px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-}
-
-@keyframes rotateImage {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.container h2 {
-    font-size: 2rem;
-    color: #2ca436;
-    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 
 .login-container form {
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .login-container label {
-    font-size: 0.9rem;
-    margin-bottom: 5px;
+    font-size: 1rem; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2ca436; 
 }
 
 .login-container input {
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 0.9rem;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #2ca436; 
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 .login-container button {
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #2ca436;
+    padding: 12px;
+    margin: 12px 0;
+    background-color: #2ca436; 
     color: #fff;
     border: none;
-    border-radius: 3px;
-    font-size: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem; 
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -79,6 +71,7 @@
 .login-container a {
     color: #007BFF;
     text-decoration: none;
+    font-weight: bold; 
 }
 
 .login-container a:hover {

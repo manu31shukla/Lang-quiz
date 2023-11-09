@@ -1,0 +1,88 @@
+.landing-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .animation-container {
+    flex: 1;
+    position: relative;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    height: 80%; 
+    overflow: hidden;
+    border: 5px solid #fff; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .video-overlay video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .landing-container h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .landing-container p {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .get-started-button,
+  .already-have-account-link {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .get-started-button {
+    background-color: #2ca436;
+    color: #fff;
+    margin-right: 20px;
+  }
+  
+  .get-started-button:hover {
+    background-color: #117036;
+  }
+  
+  .already-have-account-link {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: #007BFF;
+    background-color: #fff;
+  }
+  
+  .already-have-account-link:hover {
+    text-decoration: underline;
+    background-color: #d5d9de;
+    color: #0056b3;
+  }
+  
+  body {
+    margin: 0;
+  }
